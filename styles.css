@@ -1,0 +1,91 @@
+:root {
+    --main-color: #b8e2ff;
+    --second-color: #0060a5;
+    --third-color: rgb(32, 217, 237);
+    --text-color: #f0f8ff;
+}
+
+/* Path: styles.css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: var(--main-color);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: #131313;
+    height: 100vh;
+}
+header {
+    /* background-color: var(--main-color); */
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--second-color);
+    margin-bottom: 1rem;
+}
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input_form {
+    width: 100%;
+    padding: 5px;
+    color: var(--text-color);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+.input_form label {
+    font-weight: bold;
+}
+.input_form input {
+    width: 100%;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+.input_form select {
+    width: 100%;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+#btn-predict {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+    cursor: pointer;
+}

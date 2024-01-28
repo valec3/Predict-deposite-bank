@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Predicciones de Depósitos a Plazos Bancarios</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Predicciones de Depósitos a Plazos Bancarios</h1>
+        </header>
+        <main>
+            <!-- age	job	marital	education	balance	housing	loan	contact	day	month	duration	campaign	pdays	 -->
+            <form action="">
+                <div class="input_form">
+                    <label for="age">Edad</label>
+                    <input type="number" id="age" />
+                </div>
+                <div class="input_form">
+                    <label for="job">Trabajo</label>
+                    <select id="job">
+                        <option value="1.">Administración</option>
+                        <option value="2">Trabajador</option>
+                        <option value="3">Emprendedor</option>
+                        <option value="4">Ama de casa</option>
+                        <option value="5">Gerencia</option>
+                        <option value="6">Jubilado</option>
+                        <option value="7">Autónomo</option>
+                        <option value="8">Servicios</option>
+                        <option value="9">Estudiante</option>
+                        <option value="10">Técnico</option>
+                        <option value="11">Desempleado</option>
+                        <option value="12">Otro</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="marital">Estado Civil</label>
+                    <select id="marital">
+                        <option value="1">Divorciado</option>
+                        <option value="2">Casado</option>
+                        <option value="3">Soltero</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="education">Educación</label>
+                    <select id="education">
+                        <option value="1">Primaria</option>
+                        <option value="2">Secundaria</option>
+                        <option value="3">Terciaria</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="balance">Balance</label>
+                    <input type="number" id="balance" />
+                </div>
+                <div class="input_form">
+                    <label for="housing">Hipoteca</label>
+                    <select id="housing">
+                        <option value="0">No</option>
+                        <option value="1">Sí</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="loan">Préstamo</label>
+                    <select id="loan">
+                        <option value="0">No</option>
+                        <option value="1">Sí</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="contact">Contacto</label>
+                    <select id="contact">
+                        <option value="1">Celular</option>
+                        <option value="2">Teléfono</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="day">Día</label>
+                    <input type="number" id="day" />
+                </div>
+                <div class="input_form">
+                    <label for="month">Mes</label>
+                    <select id="month">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </div>
+                <div class="input_form">
+                    <label for="duration">Duración</label>
+                    <input type="number" id="duration" />
+                </div>
+                <div class="input_form">
+                    <label for="campaign">Campaña</label>
+                    <input type="number" id="campaign" />
+                </div>
+                <div class="input_form">
+                    <label for="pdays">Pdays</label>
+                    <input type="number" id="pdays" />
+                </div>
+
+                <button id="btn-predict">Predecir</button>
+            </form>
+            <div id="result-cont">
+                <h2 id="result"></h2>
+            </div>
+        </main>
+        <script src="./app.mjs"></script>
+    </body>
+</html>
