@@ -79,5 +79,5 @@ function predictData(e) {
     predictExample(inputTensor)
 }
 
-const btnPredict = document.getElementById('btn-predict')
-btnPredict.addEventListener('click', predictData)
+const formPredict = document.getElementById('form-pred')
+formPredict.addEventListener('submit', predictData)
